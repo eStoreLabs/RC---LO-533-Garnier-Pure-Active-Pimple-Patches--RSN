@@ -167,15 +167,11 @@
 <script src="https://www.ros.net.pl/Portals/0/rich-content/garnier/3600542573146/js/slider.js"></script>
 <script>
   (() => {
-    if (!document.querySelector('.swiper1.swiper-initialized')) {
-
-      const sliderWrapper = document.querySelector(
-        '#es-loreal.es-loreal .es-slider__wrapper',
-      );
+    if (!document.querySelector('.es-swiper.swiper-initialized')) {
 
       const swiper = new Swiper('.es-swiper', {
         loop: true,
-        autoHeight: false,
+        autoHeight: true,
         pagination: {
           el: '.es-swiper-pagination',
         },
